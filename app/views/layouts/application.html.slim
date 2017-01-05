@@ -18,5 +18,8 @@ html.no-touch
   body
     - if user_signed_in?
       = render '/admin/partials/header'
-  .container
-    = yield
+  .container-fluid
+    = render '/admin/partials/sidebar'
+
+    .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+      = yield
