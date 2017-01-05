@@ -6,6 +6,10 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :dashboard
+    resources :hmo_providers
+    resources :hmo_types
+    resources :clients
+    resources :employees
   end
-  
+
 end

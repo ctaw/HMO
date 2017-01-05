@@ -1,5 +1,8 @@
-.row
-  .col-sm-3.col-md-2.sidebar
-    ul.nav.nav-sidebar
-      li class="#{params[:controller] == 'admin/dashboard' ? 'active' : ''}"
-        a href="/admin/dashboard"  Dashboard
+.container-fluid
+  .row
+    .col-sm-3.col-md-2.sidebar
+      ul.nav.nav-sidebar
+        li class="#{params[:controller] == 'admin/dashboard' ? 'active' : ''}"
+          a href="/admin/dashboard"  Dashboard
+        li class="#{params[:controller] == 'admin/employees' ? 'active' : ''}"
+          a href="/admin/employees"  Employees

@@ -31,6 +31,7 @@ body {
 
 .main {
   padding: 20px;
+  margin-top: 65px;
 }
 @media (min-width: 768px) {
   .main {
@@ -200,3 +201,13 @@ body {
 .bg-yellow { background-color: #f39c12; }
 .bg-red { background-color: #dd4b39; }
 .bg-green { background-color: #00a65a; }
+
+.panel-default {
+  border-top: 3px solid $main-color;
+}
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #ddd;
+}

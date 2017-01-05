@@ -14,12 +14,8 @@ html.no-touch
       link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
 
     = csrf_meta_tags
-
   body
     - if user_signed_in?
       = render '/admin/partials/header'
-  .container-fluid
-    = render '/admin/partials/sidebar'
-
-    .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
-      = yield
+      = render '/admin/partials/sidebar'
+    = yield
